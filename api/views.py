@@ -26,4 +26,5 @@ class GetLiveColor(APIView):
                 resp['s'] = True
                 resp['d'] = dominant_color
                 resp['c'] = colors
+                resp['i'] = image_url
         return Response(resp, 200)
